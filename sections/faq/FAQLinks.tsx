@@ -16,7 +16,7 @@ export default function FAQLinks() {
       {categories.map((category, index) => (
         <button
           key={index}
-          className="px-4 py-2 rounded-full border border-gray-500 text-gray-300 hover:border-[#F7E967] transition-colors duration-200 text-sm"
+          className="px-4 py-2 rounded-full border border-gray-500 text-gray-300 hover:border-[#F7E967] transition-colors duration-200 text-sm cursor-pointer"
         >
           {category}
         </button>

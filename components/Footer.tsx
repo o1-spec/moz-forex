@@ -5,7 +5,7 @@ import { Phone, Mail, ArrowUpRight } from "lucide-react";
 
 function Footer() {
   return (
-    <div className="text-[#E0E0E0] px-4 max-w-[1200px] mx-auto">
+    <div className="text-[#E0E0E0] px-4 max-w-[1150px] mx-auto">
       <div className="flex justify-between pb-12">
         <div>
           <div className="pb-16">

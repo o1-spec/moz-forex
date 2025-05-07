@@ -1,19 +1,12 @@
+import SectionName from "@/components/SectionName";
 import Image from "next/image";
 
 export default function TraderPerks() {
   return (
     <section className="text-[#e0e0e0] bg-[#2F2F304D] py-16 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-6">
-          <span
-            className="text-sm text-white px-4 py-3 rounded-lg"
-            style={{
-              background: "linear-gradient(60deg, #5F5F61, #BEB66580)",
-            }}
-          >
-            Mozaforex benefits
-          </span>
-        </div>
+      <div className="max-w-[1150px] mx-auto">
+      <SectionName name={"MozaForex benefits"}/>
+
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Premium perks as a trader with
           <span className="text-[#F7E967]"> Mozforex</span>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SectionName from "./SectionName";
 
 const testimonials = [
   {
@@ -48,22 +49,14 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="max-w-[1200px] mx-auto px-4 py-28  text-[#E0E0E0]">
-      <div className="mb-5">
-        <span
-          className="text-sm text-white px-4 py-3 rounded-lg"
-          style={{
-            background: "linear-gradient(90deg, #5F5F61, #BEB66580)",
-          }}
-        >
-          Our testimonials
-        </span>
-      </div>
+    <section className="max-w-[1150px] mx-auto px-4 py-28  text-[#E0E0E0]">
+              <SectionName name={"Our Testimonials"}/>
+
 
       <h2 className="text-4xl font-bold mb-2">
         What our traders are <span className="text-[#F7E967]">saying</span>
       </h2>
-      <p className="mb-12 text-gray-400 max-w-2xl">
+      <p className="mb-12 text-gray-400 max-w-2xl text-[15px]">
         We are expanding our services to provide you with more options for
         global money transfers.
       </p>

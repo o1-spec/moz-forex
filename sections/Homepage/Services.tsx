@@ -1,19 +1,11 @@
+import SectionName from "@/components/SectionName";
 import { Banknote, LineChart, Briefcase } from "lucide-react";
 
 export default function Services() {
   return (
-    <section className="bg-[#121212] text-white py-16 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-5">
-          <span
-            className="text-sm text-white px-4 py-3 rounded-lg"
-            style={{
-              background: "linear-gradient(90deg, #5F5F61, #BEB66580)",
-            }}
-          >
-            Our Services
-          </span>
-        </div>
+    <section className="text-[#e0e0e0] py-16 px-6 md:px-12">
+      <div className="max-w-[1150px] mx-auto">
+       <SectionName name={"Our Services"} />
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Unlock precision, trade with
           <span className="text-[#F7E967]"> Power</span>

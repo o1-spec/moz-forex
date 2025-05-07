@@ -1,7 +1,7 @@
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import HeroCarousel from "./HeroCarousel";
+import ContactBtn from "@/components/ContactBtn";
 
 function HomepageHero() {
   return (
@@ -19,14 +19,8 @@ function HomepageHero() {
             </p>
           </div>
           <div className="flex gap-4 items-center">
-            <Link
-              href="/contact"
-              className="border border-[#F7E967] text-[#F7E967] px-4 py-2 rounded-lg flex items-center gap-2"
-            >
-              Contact Us
-              <ArrowRight width={16} height={16} />
-            </Link>
-            <Link href="#" className="underline text-[15px]">
+            <ContactBtn isArrowRight={true} />
+            <Link href="#" className="underline text-[14px]">
               EXPLORE OUR SERVICES
             </Link>
           </div>
