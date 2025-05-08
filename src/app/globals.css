@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.thick-shadow {
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.ProseMirror {
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  min-height: 80px;
+  caret-color: white;
+}
+
+.ProseMirror p {
+  margin: 0;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
