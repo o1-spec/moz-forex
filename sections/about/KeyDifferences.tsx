@@ -1,6 +1,13 @@
 import SectionName from "@/components/SectionName";
 import React from "react";
 import { MessageSquare, Shield, CheckCircle, Gem } from "lucide-react";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 const features = [
   {
@@ -31,11 +38,12 @@ const features = [
 
 function KeyDifferences() {
   return (
-    <section className="text-[#e0e0e0] py-16 px-6 md:px-12">
+    <section className="text-[#e0e0e0] pb-36 pt-8 px-6 md:px-12">
       <div className="max-w-[1150px] mx-auto">
         <SectionName name={"Key Differentiators"} />
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
-          What sets Mozforex <span className="text-[#F7E967]"> apart </span>
+          What sets Mozforex <span className={`${playfair.className} text-[#F7E967]`}> apart</span>
+
         </h2>
 
         <p className="mb-12 text-lg">

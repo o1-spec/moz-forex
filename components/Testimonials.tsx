@@ -1,6 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import SectionName from "./SectionName";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 const testimonials = [
   {
@@ -50,11 +57,11 @@ const testimonials = [
 function Testimonials() {
   return (
     <section className="max-w-[1150px] mx-auto px-4 py-28  text-[#E0E0E0]">
-              <SectionName name={"Our Testimonials"}/>
-
+      <SectionName name={"Our Testimonials"} />
 
       <h2 className="text-4xl font-bold mb-2">
-        What our traders are <span className="text-[#F7E967]">saying</span>
+        What our traders are
+        <span className={`${playfair.className} text-[#F7E967]`}> saying</span>
       </h2>
       <p className="mb-12 text-gray-400 max-w-2xl text-[15px]">
         We are expanding our services to provide you with more options for

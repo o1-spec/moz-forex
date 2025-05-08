@@ -3,12 +3,7 @@ import React from "react";
 function SectionName({ name }: { name?: string }) {
   return (
     <div className="mb-6">
-      <span
-        className="text-sm text-white px-4 py-3 rounded-lg"
-        style={{
-          background: "linear-gradient(90deg, #5F5F61, #BEB66580)",
-        }}
-      >
+      <span className="px-6 py-3 rounded-lg text-white font-medium bg-gradient-to-r from-[#2b2a28] via-[#4a472f] to-[#2b2a28] shadow-inner border border-gray-600">
         {name}
       </span>
     </div>

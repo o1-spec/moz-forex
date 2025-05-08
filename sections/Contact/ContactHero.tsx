@@ -1,4 +1,11 @@
 import React from "react";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
+});
 
 function ContactHero() {
   return (
@@ -6,7 +13,10 @@ function ContactHero() {
       <div className="flex text-[#E0E0E0] flex-col items-center gap-8">
         <div className="pb-6">
           <h4 className="text-[43px] font-bold text-center pb-3">
-            Connect With <span className="text-[#F7E967]">MozForex</span>
+            Connect With&nbsp;
+            <span className={`${playfair.className} text-[#F7E967]`}>
+               MozForex
+            </span>
           </h4>
           <p className="text-center text-[13px]">
             Our team is here to assist you. Reach out anytime and we’ll get back

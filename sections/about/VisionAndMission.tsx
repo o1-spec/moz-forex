@@ -1,6 +1,13 @@
 import SectionName from "@/components/SectionName";
 import Image from "next/image";
 import React from "react";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'], 
+});
+
 
 function VisionAndMission() {
   return (
@@ -9,7 +16,8 @@ function VisionAndMission() {
         <SectionName name={"Our vision and mission"} />
       </div>
       <h2 className="text-3xl md:text-4xl font-semibold mb-2">
-        Our why and or <span className="text-[#F7E967]"> way </span>
+        Our why and or <span className={`${playfair.className} text-[#F7E967]`}> way</span>
+
       </h2>
 
       <p className="text-gray-400 mb-12 text-[15px]">

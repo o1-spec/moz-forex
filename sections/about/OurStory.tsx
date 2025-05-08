@@ -2,6 +2,13 @@ import ContactBtn from "@/components/ContactBtn";
 import SectionName from "@/components/SectionName";
 import Link from "next/link";
 import React from "react";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'], 
+});
+
 
 function OurStory() {
   return (
@@ -15,7 +22,7 @@ function OurStory() {
             <SectionName name="Our Story" />
             <h4 className="text-[40px] font-bold pb-3">
               Connecting traders
-              <span className="text-[#F7E967]">worldwide</span>
+              <span className={`${playfair.className} text-[#F7E967]`}> worldwide</span>
             </h4>
             <h6 className="text-[16px] font-normal py-2">
               Our journey is driven by innovation, and a passion for empowering

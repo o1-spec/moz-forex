@@ -1,5 +1,12 @@
 import SectionName from "@/components/SectionName";
 import { Banknote, LineChart, Briefcase } from "lucide-react";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 export default function Services() {
   return (
@@ -8,8 +15,8 @@ export default function Services() {
        <SectionName name={"Our Services"} />
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Unlock precision, trade with
-          <span className="text-[#F7E967]"> Power</span>
-        </h2>
+          <span className={`${playfair.className} text-[#F7E967]`}> Power</span>
+          </h2>
 
         <p className="text-gray-400 mb-12 text-lg">
           Powerful tools, real-time data, and secure systems to trade with total

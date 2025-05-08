@@ -1,6 +1,13 @@
 import SectionName from "@/components/SectionName";
 import Image from "next/image";
 import React from "react";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 const coreValues = [
   {
@@ -33,13 +40,13 @@ const coreValues = [
 
 function CoreValues() {
   return (
-    <section className="text-[#e0e0e0] py-28 px-6 md:px-12">
+    <section className="text-[#e0e0e0] py-32 px-6 md:px-12">
       <div className="max-w-[1200px] mx-auto">
         <SectionName name={"Our Core Values"}/>
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           The principles that guide
-          <span className="text-[#F7E967]"> Mozforex</span>
-        </h2>
+          <span className={`${playfair.className} text-[#F7E967]`}> MozForex</span>
+          </h2>
 
         <p className="text-gray-400 mb-12 text-[15px]">
           At Mozforex, we are guided by a strong set of core values that

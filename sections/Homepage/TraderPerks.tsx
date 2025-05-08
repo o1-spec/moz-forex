@@ -1,5 +1,13 @@
 import SectionName from "@/components/SectionName";
 import Image from "next/image";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
+
 
 export default function TraderPerks() {
   return (
@@ -9,8 +17,8 @@ export default function TraderPerks() {
 
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Premium perks as a trader with
-          <span className="text-[#F7E967]"> Mozforex</span>
-        </h2>
+          <span className={`${playfair.className} text-[#F7E967]`}> MozForex</span>
+          </h2>
         <p className="mb-12 text-[16px]">
           Become a trader and gain access to premium perks designed to elevate
           your trading experience.

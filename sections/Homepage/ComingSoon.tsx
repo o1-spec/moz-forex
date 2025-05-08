@@ -1,16 +1,23 @@
 import SectionName from "@/components/SectionName";
 import Image from "next/image";
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'], 
+});
+
 
 export default function ComingSoon() {
   return (
     <section className="text-[#e0e0e0] py-28 px-6 md:px-12">
       <div className="max-w-[1150px] mx-auto">
-        <SectionName name={"Cominh Soon"} />
+        <SectionName name={"Coming Soon"} />
 
         <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Expand your options for
-          <span className="text-[#F7E967]"> transfers</span>
-        </h2>
+          <span className={`${playfair.className} text-[#F7E967]`}> transfers</span>
+          </h2>
 
         <p className="text-gray-400 mb-12 text-[15px]">
           We are expanding our services to provide you with even more options
