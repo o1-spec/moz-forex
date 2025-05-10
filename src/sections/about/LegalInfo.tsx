@@ -11,16 +11,16 @@ const playfair = Playfair_Display({
 
 function LegalInfo() {
   return (
-    <section className="text-[#e0e0e0] py-32 px-6 md:px-12">
+    <section className="text-[#e0e0e0] py-48">
       <div className="max-w-[1240px] mx-auto">
         <SectionName name={"Legal Information"} />
 
-        <h2 className="text-[56px] md:text-4xl font-semibold mb-2">
+        <h2 className="text-[56px] md:text-[56px] font-semibold mb-2">
           Legal and regulatory
           <span className={`${playfair.className} text-[#F7E967]`}> information</span>
           </h2>
 
-        <p className="mb-12 text-[24px]">
+        <p className="mb-18 text-[24px]">
           Transparency and compliance are at the core of everything we do. for
           global money transfers.
         </p>

@@ -55,7 +55,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="max-w-[1240px] mx-auto px-4 py-28  text-[#E0E0E0]">
+    <section className="max-w-[1240px] mx-auto py-28  text-[#E0E0E0]">
       <SectionName name={"Our Testimonials"} />
 
       <h2 className="text-[56px] font-bold mb-2">

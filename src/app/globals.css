@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .thick-shadow {
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 80px #2f2f30;
 }
 
 .ProseMirror {
@@ -22,5 +22,47 @@
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
+
+.section-bg {
+  background: linear-gradient(
+    90.29deg,
+    rgba(247, 233, 103, 0) 0.07%,
+    rgba(247, 233, 103, 0.2) 46.97%,
+    rgba(247, 233, 103, 0) 99.96%
+  );
+}
+
+.inner-bg {
+  background: linear-gradient(
+    90.29deg,
+    rgba(247, 233, 103, 0) 0.07%,
+    rgba(247, 233, 103, 0.2) 46.97%,
+    rgba(247, 233, 103, 0) 99.96%
+  );
+  border-radius: 0.5rem; /* match the outer radius */
+  height: 100%;
+  width: 100%;
+}
+
+.hover-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90.29deg,
+    rgba(247, 233, 103, 0) 0.07%,
+    rgba(247, 233, 103, 0.2) 46.97%,
+    rgba(247, 233, 103, 0) 99.96%
+  );
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.group:hover .hover-gradient::before {
+  opacity: 1; /* Fade in */
+}
+

@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Phone, Mail, ArrowUpRight } from "lucide-react";
 
 function Footer() {
   return (
     <div className="text-[#E0E0E0] px-4 max-w-[1240px] mx-auto">
-      <div className="flex justify-between pb-12">
+      <div className="flex justify-between pb-20">
         <div>
           <div className="pb-16">
             <Image
@@ -32,18 +31,26 @@ function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="text-white text-[20px] mb-4">Sign up for newsletter</h3>
-            <div className="relative w-full border-b border-[#2F2F30]">
+            <h3 className="text-white text-[20px] mb-4">
+              Sign up for newsletter
+            </h3>
+            <div className="relative w-[330px] border-b border-[#2F2F30]">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="w-full bg-transparent placeholder:text-[16px] text-white py-4 pr-10 focus:outline-none"
+                className="w-full bg-transparent placeholder:text-[16px] text-white py-6 pr-5 focus:outline-none"
               />
               <button
                 type="submit"
                 className="absolute right-0 top-1/2 -translate-y-1/2 text-white"
               >
-                <ArrowUpRight className="w-8 h-8" />
+                <Image
+                  src="/logos/top-right-arrow.svg"
+                  alt="mail"
+                  width={20}
+                  height={20}
+                  className="w-[16px]"
+                />
               </button>
             </div>
           </div>
@@ -55,14 +62,26 @@ function Footer() {
               href="#"
               className="opacity-70 text-[16px] flex items-center gap-2"
             >
-              <Phone className="w-4 h-4" />
+              <Image
+                src="/logos/call.svg"
+                alt="call"
+                width={20}
+                height={20}
+                className="w-[19.5px]"
+              />
               998-09865-443
             </Link>
             <Link
               href="#"
               className="opacity-70 text-[16px] flex items-center gap-2"
             >
-              <Mail className="w-4 h-4" />
+              <Image
+                src="/logos/mail.svg"
+                alt="mail"
+                width={20}
+                height={20}
+                className="w-[19.5px]"
+              />
               Mozforexcorporate@gmail.com
             </Link>
           </div>
@@ -77,7 +96,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between text-[13px] py-10 border-t border-[#2F2F30]">
+      <div className="flex justify-between text-[13px] py-14 border-t border-[#2F2F30]">
         <p className="text-[18px]">&copy; 2025 Mozforex.All right reserved</p>
         <div className="flex items-center gap-3 text-[16px]">
           <Link href="#">Terms and Condition</Link>

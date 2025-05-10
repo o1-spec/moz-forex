@@ -12,8 +12,8 @@ const playfair = Playfair_Display({
 
 function AboutHero() {
   return (
-    <div className="pb-16">
-      <div className="max-w-[1240px] mx-auto px-4">
+    <div className="pb-16 pt-10">
+      <div className="max-w-[1240px] mx-auto">
         <div className="flex text-[#E0E0E0] max-w-[1054px] mx-auto flex-col items-center gap-8">
           <div>
             <h4 className="text-[72px] font-bold text-center pb-3">

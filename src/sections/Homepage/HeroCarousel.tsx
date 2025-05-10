@@ -50,7 +50,7 @@ export default function HeroCarousel() {
 
   return (
     <div className="relative h-[600px] max-w-[1240px] overflow-hidden py-20 mx-auto flex flex-col items-center justify-center">
-      <div className="relative w-[1140px] h-full rounded-3xl">
+      <div className="relative w-[1240px] h-full rounded-3xl">
         {slides.map((slide, index) => {
           const isActive = index === current;
           
@@ -58,7 +58,7 @@ export default function HeroCarousel() {
             <div
               key={slide.id}
               className={classNames(
-                "absolute inset-0 w-full h-full bg-cover bg-center flex items-center justify-center text-white px-6 transition-opacity duration-1000",
+                "absolute inset-0 w-full h-full bg-cover bg-center flex items-center justify-center text-white px-6 transition-opacity duration-1000 rounded-2xl",
                 {
                   "opacity-100 z-20": isActive,
                   "opacity-0 z-10": !isActive,
@@ -88,7 +88,7 @@ export default function HeroCarousel() {
               }
             }}
             className={classNames(
-              "w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-md transition-colors duration-300",
+              "w-10 h-10 rounded-full flex items-center text-[18px] justify-center shadow-md transition-colors duration-300",
               current === index ? "text-yellow-300" : "text-white"
             )}
             disabled={isAnimating}

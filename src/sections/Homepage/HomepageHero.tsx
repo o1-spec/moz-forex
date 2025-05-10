@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 function HomepageHero() {
   return (
     <div>
-      <div className="max-w-[1240px] mx-auto px-4">
+      <div className="max-w-[1240px] mx-auto px-4 py-5">
         <div className="flex text-[#E0E0E0] flex-col items-center gap-8">
           <div>
             <h4 className="text-[72px] font-bold text-center pb-3">

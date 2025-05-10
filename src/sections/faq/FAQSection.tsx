@@ -50,7 +50,7 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="max-w-[1238px] mx-auto px-4 pb-40 pt-10 text-[#E0E0E0] relative">
+    <div className="max-w-[1238px] mx-auto px-4 pb-48 pt-10 text-[#E0E0E0] relative">
       <div className="flex bg-[#2F2F3080] p-12 rounded-2xl shadow-lg">
         <div className="basis-1/2 relative">
           <div className="w-[60%]">

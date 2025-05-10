@@ -9,7 +9,7 @@ const playfair = Playfair_Display({
 
 export default function Services() {
   return (
-    <section className="text-[#e0e0e0] py-16 px-6 md:px-12">
+    <section className="text-[#e0e0e0] py-20 ">
       <div className="max-w-[1240px] mx-auto">
         <SectionName name={"Our Services"} />
         <h2 className="text-3xl md:text-[56px] font-semibold mb-2">
@@ -23,15 +23,16 @@ export default function Services() {
         </p>
 
         <div className="grid md:grid-cols-3">
-          <div className="bg-[#1e1e1e] p-8 rounded-xl rounded-r-none border border-[#5F5F61] flex flex-col items-start text-left">
-            <Image
-              src="/exchange.png"
-              alt="excchange"
-              width={28}
-              height={28}
-              className="w-[24px] h-[24px]"
-            />
-            <div className="rounded-full bg-[##2F2F30] thick-shadow p-4 mb-4"></div>
+          <div className="bg-[#2F2F3080] p-8 rounded-xl rounded-r-none border border-[#353535] border-r-0 flex flex-col items-start text-left">
+            <div className="rounded-full thick-shadow bg-[##2F2F30] p-4 mb-4">
+              <Image
+                src="/exchange.png"
+                alt="excchange"
+                width={28}
+                height={28}
+                className="w-[24px] h-[24px]"
+              />
+            </div>
             <h3 className="text-[32px] font-semibold mb-2">Money Exchange</h3>
             <p className="text-[18px]">
               Enjoy competitive exchange rates and fast, secure transfers to a
@@ -39,8 +40,8 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="bg-[#1e1e1e] p-8 border border-[#5F5F61] flex flex-col items-start text-left">
-            <div className="rounded-full bg-[##2F2F30] thick-shadow p-4 mb-4">
+          <div className="bg-[#2F2F30]/50  p-8 flex flex-col border border-[#353535] items-start text-left">
+            <div className="rounded-full thick-shadow bg-[##2F2F30] p-4 mb-4">
               <Image
                 src="/upward-spiral.png"
                 alt="Trading"
@@ -56,8 +57,8 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="bg-[#1e1e1e] p-8 rounded-r-xl border border-[#5F5F61] flex flex-col items-start text-left">
-            <div className="rounded-full bg-[##2F2F30] thick-shadow p-4 mb-4">
+          <div className="bg-[#2F2F3080] p-8 rounded-r-xl border border-[#353535] border-l-0 flex flex-col items-start text-left">
+            <div className="rounded-full thick-shadow bg-[##2F2F30] p-4 mb-4">
               <Image
                 src="/percent.png"
                 alt="Percent"

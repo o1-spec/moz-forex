@@ -40,15 +40,15 @@ const coreValues = [
 
 function CoreValues() {
   return (
-    <section className="text-[#e0e0e0] py-32 px-6 md:px-12">
+    <section className="text-[#e0e0e0] py-52">
       <div className="max-w-[1240px] mx-auto">
         <SectionName name={"Our Core Values"}/>
-        <h2 className="text-3xl md:text-[72px] font-semibold mb-2">
+        <h2 className="text-3xl md:text-[56px] font-semibold mb-2">
           The principles that guide
           <span className={`${playfair.className} text-[#F7E967]`}> MozForex</span>
           </h2>
 
-        <p className="mb-12 text-[20px]">
+        <p className="mb-12 text-[24px]">
           At Mozforex, we are guided by a strong set of core values that
           underpin everything we do.
         </p>

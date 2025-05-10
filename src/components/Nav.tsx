@@ -31,14 +31,14 @@ function Nav({ name }: { name?: string }) {
   }, [lastScrollY]);
 
   return (
-    <div className={`py-12 pt-10 px-4 max-w-[1240px] mx-auto transition-all duration-300 ${
-      isSticky ? "pt-0 fixed top-0 left-0 right-0 z-50 max-w-full px-4" : ""
+    <div className={`py-12 pt-10 max-w-[1240px] mx-auto transition-all duration-300 ${
+      isSticky ? "pt-0 fixed top-0 left-0 right-0 -z-50 max-w-[1240px]" : ""
     }`}>
       <div className={`bg-[#2F2F3040] p-6 py-5 rounded-xl h-[90px] flex justify-between items-center border border-[#2F2F30] shadow-lg backdrop-blur-sm transition-all duration-300 ${
         isSticky ? "rounded-none rounded-b-xl border-t-0 -translate-y-[30px] -z-20" : ""
       }`}>
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={70} height={70} className="w-[81px] h-[50px]" />
+          <Image src="/logo.svg" alt="Logo" width={70} height={70} className="w-[81px] h-[50px]" />
         </Link>
         <nav className="flex gap-12 items-center text-[18px]">
           <Link

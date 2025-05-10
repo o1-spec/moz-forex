@@ -7,11 +7,10 @@ const playfair = Playfair_Display({
   weight: ['700'],
 });
 
-
-
 export default function TraderPerks() {
   return (
-    <section className="text-[#e0e0e0] bg-[#2F2F304D] py-16 px-6 md:px-12">
+    <section className="text-[#e0e0e0] bg-[#2F2F304D] py-16
+    ">
       <div className="max-w-[1240px] mx-auto">
       <SectionName name={"MozaForex benefits"}/>
 
@@ -38,7 +37,7 @@ export default function TraderPerks() {
             <h3 className="text-[32px] font-semibold mb-2">
               Preferred Exchange Rates
             </h3>
-            <p className="max-w-[560px] text-[20px]">
+            <p className="max-w-[1174px] px-56 text-[20px]">
               Gain a competitive edge with access to tighter spreads and
               favorable exchange rates. Whether you&apos;re trading major pairs
               or emerging markets, you’ll benefit from optimized pricing
@@ -59,7 +58,7 @@ export default function TraderPerks() {
             <h3 className="text-[32px] font-semibold mb-2">
               Personalized market insights
             </h3>
-            <p className="px-14 text-[20px]">
+            <p className="px-6 max-w-[570px] text-[20px]">
               Get personalized insights with real-time updates, trend alerts,
               and curated reports tailored to your trading style.
             </p>
